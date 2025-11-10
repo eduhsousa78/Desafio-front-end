@@ -1,0 +1,45 @@
+
+.logo-marquee-section {
+  background-color: #f8f9fa;
+  overflow: hidden;
+  padding: 2rem 0;
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 25s linear infinite;
+}
+.logo-list {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.logo-list img {
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.logo-list img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,11 @@
+### Paleta de Cores Sugerida
+:root{
+--color-primary:    #D7FF3F;  
+--color-dark:       #0B0B0B ; 
+--color-light-1:    #F5F5F7 ; 
+--color-light-2:    #EDEDED ; 
+--border-radius:    16px - 20px;  /* Cards e elementos */
+--box-shadow:       0 8px 24px rgba(0, 0, 0, 0.06);  /* Sombra suave */
+}
+
+

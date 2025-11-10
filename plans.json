@@ -1,0 +1,40 @@
+
+[
+  {
+    "id": "dev",
+    "title": "Development",
+    "price": 10,
+    "features": [
+      "1 Module Javascript",
+      "1 Module Human Resources"
+    ],
+    "highlight": false,
+    "badge": null
+  },
+  {
+    "id": "it",
+    "title": "IT & Software",
+    "price": 30,
+    "features": [
+      "1 Module Javascript",
+      "1 Module Human Resources",
+      "2 Module Sales Teams",
+      "Pack Marketing Skills",
+      "5 Module Study Case"
+    ],
+    "highlight": true,
+    "badge": "NEW!"
+  },
+  {
+    "id": "business",
+    "title": "Business",
+    "price": 50,
+    "features": [
+      "Acesso completo",
+      "Suporte prioritário",
+      "Certificados"
+    ],
+    "highlight": false,
+    "badge": null
+  }
+]

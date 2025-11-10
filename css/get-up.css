@@ -1,0 +1,57 @@
+.feature-item .icon {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .feature-item:hover .icon {
+    transform: scale(1.06);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
+  }
+
+  .feature-title {
+    position: relative;
+    display: inline-block;
+  }
+
+  .feature-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+  }
+
+  .feature-item:hover .feature-title::after {
+    width: 100%;
+  }
+
+.tutor-card {
+
+
+    padding: 10px; 
+    
+   
+}
+
+/* Estilos para a Imagem (Onde o efeito de tilt será aplicado) */
+.tutor-image {
+    /* Garante que o hover tilt seja suave */
+    transition: transform 0.3s ease-in-out; 
+    
+   
+    transform-origin: center; 
+    
+    
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos de Hover */
+.tutor-card:hover .tutor-image {
+    /* 2. Imagem com hover tilt leve (até 3°) */
+    /* Usando 3 graus para a inclinação */
+    transform: rotate(3deg); 
+}

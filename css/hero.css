@@ -1,0 +1,117 @@
+:root {
+    --bs-primary: #D7FF3F;
+    --bs-dark: #0B0B0B;
+    --bs-light: #F5F5F7;
+    --font-custom: 'CustomFont', sans-serif;
+    --font-mono: 'Source Code Pro', monospace;
+    --font-mono2: --font-mono: 'Fira Code', monospace;
+}
+
+.btn-hero {
+    font-family: var(--font-mono);
+    font-size: 18px;
+    transition: transform 100ms ease-out;
+    border-radius: 0;
+    margin-bottom: 40px;
+}
+
+.btn-hero:active {
+    transform: translateY(5px);
+}
+
+.frame-3-hero {
+    top: 60%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+}
+
+.container-offset {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: clamp(1rem, 6vw, 80px);
+    padding-right: clamp(1rem, 6vw, 80px);
+    box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+    .container-offset {
+        padding-left: clamp(1rem, 4vw, 48px);
+        padding-right: clamp(1rem, 4vw, 48px);
+    }
+}
+
+@media (max-width: 576px) {
+    .container-offset {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.cta-section {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-box {
+    background: var(--bs-primary);
+    box-shadow: -2px 0px 15px -3px var(--bs-primary);
+    border-radius: 1rem;
+    position: relative;
+    top: 150px;
+
+}
+
+.main-nav.sticky {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.2s ease-out;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:focus::after {
+    width: 100%;
+}
+
+.navbar-brand img {
+    height: 30px;
+}
+
+.text-navbar .nav-link {
+    color: var(--color-dark) !important;
+    font-weight: 300 !important;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@keyframes floatY {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(6px);
+    }
+}
