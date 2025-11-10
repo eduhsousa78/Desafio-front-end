@@ -1,140 +1,132 @@
      :root {
-    --lime-green: #dcfc00; 
-    --font-color: #212529; 
-    --border-color: #e9e9e9;
-    --font-mono: 'Courier New', Courier, monospace;
-}
+         --lime-green: #dcfc00;
+         --font-color: #212529;
+         --border-color: #e9e9e9;
+         --font-mono: 'Courier New', Courier, monospace;
+     }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-}
+     body {
+         font-family: Arial, sans-serif;
+         background-color: #ffffff;
+     }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-}
+     .container {
+         max-width: 800px;
+         margin: 0 auto;
+     }
 
-.faq-title {
-    text-align: center;
-    margin-bottom: 50px;
-    font-family: var(--font-mono);
-    font-weight: 900;
-}
+     .faq-title {
+         text-align: center;
+         margin-bottom: 50px;
+         font-family: var(--font-mono);
+         font-weight: 900;
+     }
 
-/* Estrutura do Item */
-.accordion-item {
-    border-bottom: 1px solid var(--border-color);
-}
+     .accordion-item {
+         border-bottom: 1px solid var(--border-color);
+     }
 
-/* Cabeçalho/Botão da Pergunta */
-.accordion-header {
-    width: 100%;
-    padding: 2.5rem 0;
-    text-align: left;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 34px;
-    font-weight: 600;
-    color: var(--font-color);
-    font-family: var(--font-mono);
-    position: relative;
-    
-    outline: none; 
-}
+     .accordion-header {
+         width: 100%;
+         padding: 2.5rem 0;
+         text-align: left;
+         background: transparent;
+         border: none;
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         font-size: 34px;
+         font-weight: 600;
+         color: var(--font-color);
+         font-family: var(--font-mono);
+         position: relative;
 
-/* Numeração */
-.question-number {
-    margin-right: 1.5rem;
-}
-
-/* Cor do texto da resposta */
-.accordion-body {
-    padding-top: 0;
-    padding-bottom: 2.5rem;
-    font-size: 1rem;
-    color: #555;
-    font-family: var(--font-mono);
-    /* Alinha o texto da resposta após a numeração */
-    padding-left: calc(1.25rem + 1.5rem); 
-}
-
-/* 🔘 ESTILIZAÇÃO DO ÍCONE CÍRCULO (+ / −) */
-
-.toggle-icon {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid var(--font-color);
-    position: relative;
-    flex-shrink: 0; /* Impede que o ícone diminua */
-    transition: all 0.2s ease-in-out;
-}
-
-/* SINAL DE MAIS (+) - Padrão (Fechado) */
-.toggle-icon::before,
-.toggle-icon::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: var(--font-color);
-    transition: transform 0.2s ease-in-out, background-color 0.2s;
-}
-
-/* Linha Vertical do + */
-.toggle-icon::before {
-    width: 2px;
-    height: 12px;
-    transform: translate(-50%, -50%);
-}
-
-/* Linha Horizontal do + */
-.toggle-icon::after {
-    width: 12px;
-    height: 2px;
-    transform: translate(-50%, -50%);
-}
-
-/* ESTADO ABERTO (is-open) */
-
-/* Círculo (Preenchido com a cor de destaque) */
-.accordion-item.is-open .toggle-icon {
-    border-color: var(--lime-green);
-    background-color: var(--lime-green);
-}
-
-/* SINAL DE MENOS (−) */
-/* A linha vertical (::before) desaparece */
-.accordion-item.is-open .toggle-icon::before {
-    transform: translate(-50%, -50%) rotate(90deg); /* Faz a linha vertical girar e se alinhar horizontalmente */
-    height: 0; 
-}
-/* A linha horizontal (::after) permanece */
-.accordion-item.is-open .toggle-icon::after {
-    background-color: var(--font-color); /* Garante que o '-' seja escuro */
-}
-
-/* Ajuste de padding quando aberto */
-.accordion-item.is-open .accordion-header {
-    padding-bottom: 1rem;
-}
+         outline: none;
+     }
 
 
-/* 📐 Estilo para o corpo do conteúdo (transição de altura) */
-.accordion-content {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease-in-out;
-}
-
-/* Estilo para o corpo quando aberto (será definido pelo JS) */
-.accordion-item.is-open .accordion-content {
-    /* max-height é setado via JavaScript */
-}
+     .question-number {
+         margin-right: 1.5rem;
+     }
 
 
+     .accordion-body {
+         padding-top: 0;
+         padding-bottom: 2.5rem;
+         font-size: 1rem;
+         color: #555;
+         font-family: var(--font-mono);
+         padding-left: calc(1.25rem + 1.5rem);
+     }
+
+
+
+     .toggle-icon {
+         width: 30px;
+         height: 30px;
+         border-radius: 50%;
+         border: 1px solid var(--font-color);
+         position: relative;
+         flex-shrink: 0;
+         transition: all 0.2s ease-in-out;
+     }
+
+
+     .toggle-icon::before,
+     .toggle-icon::after {
+         content: '';
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         background-color: var(--font-color);
+         transition: transform 0.2s ease-in-out, background-color 0.2s;
+     }
+
+
+     .toggle-icon::before {
+         width: 2px;
+         height: 12px;
+         transform: translate(-50%, -50%);
+     }
+
+
+     .toggle-icon::after {
+         width: 12px;
+         height: 2px;
+         transform: translate(-50%, -50%);
+     }
+
+
+
+
+     .accordion-item.is-open .toggle-icon {
+         border-color: var(--lime-green);
+         background-color: var(--lime-green);
+     }
+
+
+     .accordion-item.is-open .toggle-icon::before {
+         transform: translate(-50%, -50%) rotate(90deg);
+         height: 0;
+     }
+
+     .accordion-item.is-open .toggle-icon::after {
+         background-color: var(--font-color);
+     }
+
+
+     .accordion-item.is-open .accordion-header {
+         padding-bottom: 1rem;
+     }
+
+
+
+     .accordion-content {
+         overflow: hidden;
+         max-height: 0;
+         transition: max-height 0.3s ease-in-out;
+     }
+
+
+     .accordion-item.is-open .accordion-content {}
