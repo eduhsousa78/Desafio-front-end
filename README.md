@@ -45,7 +45,7 @@ Bootstrap
 
 Clone este repositório:
 
-git clone https://github.com/eduhsousa78/Site-Responsivo---Desafio-Frontend.git
+git clone https://github.com/eduhsousa78/Desafio-front-end.git
 
 Abra o arquivo index.html no navegador de sua preferência.
 
@@ -64,4 +64,4 @@ Abra o arquivo index.html no navegador de sua preferência.
 
 Design Figma: https://www.figma.com/design/OokOScXCOGAI3eIxtW9yk1/Weecom---Teste-Front?node-id=3-12&t=kYXgyOoRM6Iup7WM-0
 
-Deploy do site: [Clique aqui](https://eduhsousa78.github.io/Site-Responsivo---Desafio-Frontend/)
+Deploy do site: [Clique aqui](https://eduhsousa78.github.io/Desafio-front-end/)
